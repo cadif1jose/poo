@@ -1,0 +1,60 @@
+  Objetos tangibles:
+
+	-personal
+	-sede del banco
+	-taquillas
+	-contadora
+	-chequeras
+	-tarjetas 
+	-libretas
+
+
+  objetos intangibles:
+	-el seguro medico
+	-pag web del banco
+	-logo del banco
+	-el sistema de control
+	-registro de cuentas
+
+
+
+  clase Banco
+    -atributos:
+       nombre (alfanumerico)
+       direcció (alfanumerico)
+       codigoregistro (alfanumerico)
+       cuentabancaria (clase cuenta)
+       cliente(clase cliente)
+       transacción(clase transacción)
+
+  
+  clase transacción
+	tipo(coleccion tipotransaccion)
+        monto(real)
+
+  clase tipotransaccion
+      deposito
+      retiro
+      referencia
+
+
+  clase cliente
+     -atributos:
+       nombre(alfanumerico)
+       cedula(real)
+       direccion(alfanumerico)
+       
+
+
+  clase tipo de cuentas
+    -atributos:
+       ahorro(clase cuenta)
+       corriente(clase cuenta)
+
+  clase cuenta
+    -atributos:
+       nro de cuenta(alfanumerico)
+       titular(alfanumerico)
+       saldo(real)
+       tipo(coleccion tipo de cuenta)
+	
